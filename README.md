@@ -1,7 +1,6 @@
 # Reddit Streak Bot
 
-**Description:**  
-This Python script uses PRAW and Reddit's OAuth2 to upvote one new post daily from a specified list of subreddits to keep your Reddit streak alive. It’s designed for macOS and can run via launchd—even if your laptop was off at the scheduled time. A random delay is included to mimic human behavior.
+  This Python script uses PRAW and Reddit's OAuth2 to upvote one new post daily from a specified list of subreddits to keep your Reddit streak alive. It’s designed for macOS and can run via launchd—even if your laptop was off at the scheduled time. A random delay is included to mimic human behavior.
 
 ## Setup
 
