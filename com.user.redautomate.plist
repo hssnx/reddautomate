@@ -4,29 +4,29 @@
 <plist version="1.0">
   <dict>
     <key>Label</key>
-    <string>com.user.redautomate</string>
+    <string>com.example.redautomate</string>
 
-    <!-- Set the program and its arguments -->
+    <!-- Use the Python interpreter from your virtual environment -->
     <key>ProgramArguments</key>
     <array>
-      <string>/usr/bin/python3</string>
-      <string>"replace with path to your script"</string>
+      <string>/Users/yourusername/path/to/your/project/.venv/bin/python3</string>
+      <string>/Users/yourusername/path/to/your/project/redautomate.py</string>
     </array>
 
-    <!-- If you want the script to run at a fixed time every day (e.g., midnight) -->
+    <!-- Schedule to run daily at a specific time (e.g., midnight) -->
     <key>StartCalendarInterval</key>
     <dict>
       <key>Hour</key>
-      <integer>12</integer>
+      <integer>0</integer>
       <key>Minute</key>
       <integer>0</integer>
     </dict>
 
-    <!-- Run the job when the LaunchAgent is loaded (e.g., on login) -->
+    <!-- Run immediately upon load if the scheduled time was missed -->
     <key>RunAtLoad</key>
     <true/>
 
-    <!-- Optional: redirect standard output and error to log files -->
+    <!-- Redirect output to log files -->
     <key>StandardOutPath</key>
     <string>/tmp/redautomate.out</string>
     <key>StandardErrorPath</key>
