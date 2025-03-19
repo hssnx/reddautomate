@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>com.user.redautomate</string>
+
+    <!-- Set the program and its arguments -->
+    <key>ProgramArguments</key>
+    <array>
+      <string>/usr/bin/python3</string>
+      <string>"replace with path to your script"</string>
+    </array>
+
+    <!-- If you want the script to run at a fixed time every day (e.g., midnight) -->
+    <key>StartCalendarInterval</key>
+    <dict>
+      <key>Hour</key>
+      <integer>12</integer>
+      <key>Minute</key>
+      <integer>0</integer>
+    </dict>
+
+    <!-- Run the job when the LaunchAgent is loaded (e.g., on login) -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- Optional: redirect standard output and error to log files -->
+    <key>StandardOutPath</key>
+    <string>/tmp/redautomate.out</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/redautomate.err</string>
+  </dict>
+</plist>
